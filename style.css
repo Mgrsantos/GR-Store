@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #fff;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header input {
+  width: 300px;
+  padding: 8px;
+}
+
+.icons span {
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* LAYOUT */
+main {
+  display: flex;
+}
+
+/* PRODUTOS */
+#products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 por linha */
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+/* DETALHE */
+#productDetail {
+  padding: 30px;
+  width: 70%;
+  display: flex;
+  gap: 40px;
+}
+
+#productDetail img {
+  width: 350px;
+}
+
+#productDetail button {
+  background: #c40000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* SIDEBAR */
+#sidebar {
+  width: 30%;
+  border-left: 1px solid #ddd;
+  padding: 20px;
+}
+
+#sidebar button {
+  background: #c40000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* PAGAMENTO */
+.payBtns button {
+  margin: 5px;
+  background: #c40000;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#paymentContent img {
+  margin-top: 10px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#closeCart {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: red;
+  margin: 5px 0;
+  padding: 5px 0;
+}

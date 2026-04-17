@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>GR Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div id="logo">🖥️ GR Store</div>
+
+  <input type="text" placeholder="Buscar...">
+
+  <div class="icons">
+   <span id="cartIcon">🛒</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- PRODUTOS -->
+  <div id="products"></div>
+
+  <!-- DETALHE PRODUTO -->
+  <div id="productDetail" style="display:none;"></div>
+
+  <!-- LATERAL -->
+  <aside id="sidebar" style="display:none;">
+
+    <!-- CARRINHO -->
+    <h2>Carrinho</h2>
+    <div id="cartItems">Nada adicionado</div>
+    <div id="total"></div>
+
+    <button onclick="finalizarCompra()">FINALIZAR COMPRA</button>
+
+    <!-- PAGAMENTO -->
+    <div id="paymentBox" style="display:none;">
+      <h2>Pagamento</h2>
+
+      <div class="payBtns">
+        <button onclick="selectPayment('pix')">PIX</button>
+        <button onclick="selectPayment('boleto')">Boleto</button>
+        <button onclick="selectPayment('card')">Cartão</button>
+      </div>
+
+      <div id="paymentContent"></div>
+    </div>
+
+  </aside>
+
+</main>
+
+<footer>
+  © Todos os direitos reservados Gabriela Rondon
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
